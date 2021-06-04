@@ -1,0 +1,173 @@
+.logo{
+    display: block;
+    margin: auto;
+    
+    width: 100px;
+    height: 100px;
+}
+
+body{
+    /* background-image: linear-gradient(rgb(122, 46, 23),rgb(10, 9, 10)); */
+    height: 120vh;
+    color: black;
+    background-color: rgb(223, 219, 219);
+}
+
+.container{
+    background-color:white;
+
+    border: 2px solid black;
+    width: 70%;
+    margin:auto;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    
+    
+    
+}
+
+.message{
+
+width: 300px;
+padding: 10px 5px;
+margin: 10px 5px;
+border-radius: 10px;
+position: relative;
+
+
+}
+.left{
+ background-color:rgb(247, 244, 244);
+ 
+ 
+}
+.right{
+background-color: rgb(0, 204, 255);
+margin-left: auto;
+color: black;
+
+}
+.middle{
+    display: block;
+    margin:auto;
+    font-size: 18px;
+    color: maroon;
+}
+.send{
+    
+    width:60%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#messageinp{
+    width: 60%;
+    border: 2px solid  rgb(0, 204, 255);
+    background-color:honeydew;
+    margin: 6px;
+    padding: 15px 30px;
+    border-radius: 30pxpx;
+    
+}
+
+::placeholder{
+    color: black;
+}
+
+.heading{
+    display: block;
+    margin: auto;
+    width: 361px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.btn{
+    position: relative;
+    border-radius: 50px;
+    background:none;
+    color: rgb(0, 204, 255);
+    padding: 15px 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    background: none;
+    transition: .5s linear;
+    transition-delay: 0s;
+}
+.btn:hover{
+    background:  rgb(0, 204, 255);
+    color: white;
+    transition: .5s linear;
+    transition-delay: 1s;
+}
+.btn span{
+    display: block;
+    position: absolute;
+}
+.btn span:nth-child(1){
+
+top:0;
+left:-100% ;
+height: 2px;
+width: 100%;
+background: linear-gradient(90deg,transparent, rgb(0, 204, 255));
+transition: 0.5s;
+transition-delay: 1s;
+
+}
+.btn:hover span:nth-child(1){
+    left:100%;
+    transition:1s;
+}
+.btn span:nth-child(2){
+
+    top:-100%;
+    right:0 ;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(180deg,transparent, rgb(0, 204, 255));
+    transition: 0.5s;
+transition-delay: 0.75s;
+    
+    }
+    .btn:hover span:nth-child(2){
+        top:100%;
+        transition:1s;
+        transition-delay: 0.25s;
+    }
+    .btn span:nth-child(3){
+
+        bottom:0;
+        right:-100% ;
+        height: 2px;
+        width: 100%;
+        background: linear-gradient(270deg,transparent, rgb(0, 204, 255));
+        transition: 0.7s;
+transition-delay: 0.2s;
+        
+        }
+        .btn:hover span:nth-child(3){
+            right:100%;
+            transition:1s;
+            transition-delay: 0.5s;
+        }
+        .btn span:nth-child(4){
+
+            top :100;
+            left:0 ;
+            height: 100%;
+            width: 2px;
+            background: linear-gradient(360deg,transparent, rgb(0, 204, 255));
+            transition: 0.5s;
+transition-delay: 0s;
+            
+            }
+            .btn:hover span:nth-child(4){
+                top:-100%;
+                transition:1s;
+                transition-delay: 0.75s;
+            }
